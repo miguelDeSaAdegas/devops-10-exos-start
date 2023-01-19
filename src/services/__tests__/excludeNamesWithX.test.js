@@ -15,4 +15,9 @@ describe("excludeNamesWithX tests suites", () => {
         const result = excludeNamesWithX(['DMX','Xzibit','JeanKevin']);
         expect(result).toEqual(['JeanKevin']);
     });
+
+    test('should return an array with only the 2 names who do not have a x', () => {
+        const result = excludeNamesWithX(['JC','Leo','xena']);
+        expect(result).toEqual(['JC','Leo']);
+    });
 });
