@@ -10,4 +10,9 @@ describe("excludeNamesWithX tests suites", () => {
         const result = excludeNamesWithX(['Momo','Hadji','Leo']);
         expect(result).toEqual(['Momo','Hadji','Leo']);
     });
+
+    test('should return an array with only the names that do not have the letter "x"', () => {
+        const result = excludeNamesWithX(['DMX','Xzibit','JeanKevin']);
+        expect(result).toEqual(['JeanKevin']);
+    });
 });

@@ -1,3 +1,4 @@
 module.exports = function (name) {
-    return name;
+    const result = name.filter((e) => ! e.toUpperCase().includes('X'));
+    return result;
 };
